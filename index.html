@@ -1,72 +1,70 @@
 <!DOCTYPE html>
-<html lang="uk">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Path Animation</title>
-
+    <title>Document</title>
+</head>
     <style>
-        body {
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            background: #ececec;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .square {
-            width: 100px;
-            height: 100px;
-            background: blue;
-            position: absolute;
-            left: 10px;
-            top: 50px;
-            animation: moveSquare 6s linear infinite;
-        }
-
-        @keyframes moveSquare {
-            0% {
+            body {
+                margin: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+                height: 100vh;
+                background: #ececec;
+                position: relative;
+                overflow: hidden;
+            }
+        
+            .square {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
                 left: 10px;
                 top: 50px;
-                background: #1900ff;
+                animation: moveSquare 6s linear infinite;
             }
-
-            25% {
-                left: 10px;
-                top: calc(100% - 110px);
-                background: #00a2ff;
+        
+            @keyframes moveSquare {
+                0% {
+                    left: 10px;
+                    top: 50px;
+                    background: #1900ff;
+                }
+        
+                25% {
+                    left: 10px;
+                    top: calc(100% - 110px);
+                    background: #00a2ff;
+                }
+        
+                50% {
+                    left: calc(100% - 110px);
+                    top: calc(100% - 110px);
+                    background: #00d84a;
+                }
+        
+                75% {
+                    left: calc(100% - 110px);
+                    top: 50px;
+                    background: #ffe600;
+                }
+        
+                100% {
+                    left: 10px;
+                    top: 50px;
+                    background: #1900ff;
+                }
             }
-
-            50% {
-                left: calc(100% - 110px);
-                top: calc(100% - 110px);
-                background: #00d84a;
-            }
-
-            75% {
-                left: calc(100% - 110px);
-                top: 50px;
-                background: #ffe600;
-            }
-
-            100% {
-                left: 10px;
-                top: 50px;
-                background: #1900ff;
-            }
-        }
     </style>
 </head>
-
+        
 <body>
-
-    <div class="square"></div>
-
+        
+            <div class="square"></div>
+        
 </body>
-
 </html>
